@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: e972bee4bf2ec0f40b18dad01ce606f0
+timeCreated: 1496898143
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: rock_frag_004
+    100002: rock_frag_005
+    100004: rock_frag_007
+    100006: rock_frag_008
+    100008: rock_frag_011
+    100010: rock_frag_012
+    100012: rock_frag_014
+    100014: rock_frag_015
+    100016: rock_frag_016
+    100018: rock_frag_018
+    100020: rock_frag_019
+    100022: rock_frag_020
+    100024: rock_frag_022
+    100026: rock_frag_028
+    100028: rock_frag_031
+    100030: rock_frag_037
+    100032: rock_frag_043
+    100034: rock_frag_044
+    100036: rock_frag_045
+    100038: rock_frag_049
+    100040: rock_frag_050
+    100042: rock_frag_051
+    100044: rock_frag_052
+    100046: rock_frag_053
+    100048: //RootNode
+    400000: rock_frag_004
+    400002: rock_frag_005
+    400004: rock_frag_007
+    400006: rock_frag_008
+    400008: rock_frag_011
+    400010: rock_frag_012
+    400012: rock_frag_014
+    400014: rock_frag_015
+    400016: rock_frag_016
+    400018: rock_frag_018
+    400020: rock_frag_019
+    400022: rock_frag_020
+    400024: rock_frag_022
+    400026: rock_frag_028
+    400028: rock_frag_031
+    400030: rock_frag_037
+    400032: rock_frag_043
+    400034: rock_frag_044
+    400036: rock_frag_045
+    400038: rock_frag_049
+    400040: rock_frag_050
+    400042: rock_frag_051
+    400044: rock_frag_052
+    400046: rock_frag_053
+    400048: //RootNode
+    2300000: rock_frag_004
+    2300002: rock_frag_005
+    2300004: rock_frag_007
+    2300006: rock_frag_008
+    2300008: rock_frag_011
+    2300010: rock_frag_012
+    2300012: rock_frag_014
+    2300014: rock_frag_015
+    2300016: rock_frag_016
+    2300018: rock_frag_018
+    2300020: rock_frag_019
+    2300022: rock_frag_020
+    2300024: rock_frag_022
+    2300026: rock_frag_028
+    2300028: rock_frag_031
+    2300030: rock_frag_037
+    2300032: rock_frag_043
+    2300034: rock_frag_044
+    2300036: rock_frag_045
+    2300038: rock_frag_049
+    2300040: rock_frag_050
+    2300042: rock_frag_051
+    2300044: rock_frag_052
+    2300046: rock_frag_053
+    3300000: rock_frag_004
+    3300002: rock_frag_005
+    3300004: rock_frag_007
+    3300006: rock_frag_008
+    3300008: rock_frag_011
+    3300010: rock_frag_012
+    3300012: rock_frag_014
+    3300014: rock_frag_015
+    3300016: rock_frag_016
+    3300018: rock_frag_018
+    3300020: rock_frag_019
+    3300022: rock_frag_020
+    3300024: rock_frag_022
+    3300026: rock_frag_028
+    3300028: rock_frag_031
+    3300030: rock_frag_037
+    3300032: rock_frag_043
+    3300034: rock_frag_044
+    3300036: rock_frag_045
+    3300038: rock_frag_049
+    3300040: rock_frag_050
+    3300042: rock_frag_051
+    3300044: rock_frag_052
+    3300046: rock_frag_053
+    4300000: rock_frag_004
+    4300002: rock_frag_005
+    4300004: rock_frag_007
+    4300006: rock_frag_008
+    4300008: rock_frag_011
+    4300010: rock_frag_012
+    4300012: rock_frag_014
+    4300014: rock_frag_015
+    4300016: rock_frag_016
+    4300018: rock_frag_018
+    4300020: rock_frag_019
+    4300022: rock_frag_020
+    4300024: rock_frag_022
+    4300026: rock_frag_028
+    4300028: rock_frag_031
+    4300030: rock_frag_037
+    4300032: rock_frag_043
+    4300034: rock_frag_044
+    4300036: rock_frag_045
+    4300038: rock_frag_049
+    4300040: rock_frag_050
+    4300042: rock_frag_051
+    4300044: rock_frag_052
+    4300046: rock_frag_053
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

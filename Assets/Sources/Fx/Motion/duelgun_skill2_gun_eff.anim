@@ -1,0 +1,1413 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: duelgun_skill2_gun_eff
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.3293, y: 2.9682, z: -0.13299}
+        inSlope: {x: 1.2264006, y: -11.339993, z: 2.9290798}
+        outSlope: {x: 1.2264006, y: -11.339993, z: 2.9290798}
+        tangentMode: 0
+      - time: 0.016666668
+        value: {x: 0.34974, y: 2.7792, z: -0.084172}
+        inSlope: {x: 1.2264006, y: -11.339993, z: 2.9290798}
+        outSlope: {x: 0.048342858, y: -0.44657198, z: 0.115332864}
+        tangentMode: 0
+      - time: 0.25
+        value: {x: 0.36102, y: 2.675, z: -0.057261}
+        inSlope: {x: 0.048342858, y: -0.44657198, z: 0.115332864}
+        outSlope: {x: 0.048342858, y: -0.44657198, z: 0.115332864}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: smoke_mesh (3)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.36, y: 0.02, z: -0.04}
+        inSlope: {x: 0, y: 70.200005, z: 0}
+        outSlope: {x: 0, y: 70.200005, z: 0}
+        tangentMode: 0
+      - time: 0.016666668
+        value: {x: 0.36, y: 1.19, z: -0.04}
+        inSlope: {x: 0, y: 70.200005, z: 0}
+        outSlope: {x: 0, y: 70.200005, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: duel_gunskill2_gun
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.1285493, y: 0.12854925, z: 0.08996767}
+        inSlope: {x: 7.2768264, y: 7.2768164, z: 5.0928206}
+        outSlope: {x: 7.2768264, y: 7.2768164, z: 5.0928206}
+        tangentMode: 0
+      - time: 0.016666668
+        value: {x: 0.24982974, y: 0.24982953, z: 0.17484802}
+        inSlope: {x: 7.2768264, y: 7.2768164, z: 5.0928206}
+        outSlope: {x: 0.28652084, y: 0.2865211, z: 0.20052731}
+        tangentMode: 0
+      - time: 0.25
+        value: {x: 0.3166846, y: 0.31668445, z: 0.22163773}
+        inSlope: {x: 0.28652084, y: 0.2865211, z: 0.20052731}
+        outSlope: {x: 0.28652084, y: 0.2865211, z: 0.20052731}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: smoke_mesh (3)
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.052582562, y: 0.04449795, z: 0.04449795}
+        inSlope: {x: -1.4360597, y: 0, z: 0}
+        outSlope: {x: -1.4360597, y: 0, z: 0}
+        tangentMode: 0
+      - time: 0.016666668
+        value: {x: 0.028648231, y: 0.04449795, z: 0.04449795}
+        inSlope: {x: -1.4360597, y: 0, z: 0}
+        outSlope: {x: -1.4360597, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: duel_gunskill2_gun
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.66
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 2.66
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.x
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.2
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0.2
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.y
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.z
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -17.8
+        inSlope: -2
+        outSlope: -2
+        tangentMode: 21
+      - time: 0.25
+        value: -18.3
+        inSlope: -2
+        outSlope: -2
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.w
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.24075478
+        inSlope: 6.072664
+        outSlope: 6.072664
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.34196585
+        inSlope: 6.072664
+        outSlope: -0.009472489
+        tangentMode: 21
+      - time: 0.1
+        value: 0.34117648
+        inSlope: -0.009472489
+        outSlope: -0.669478
+        tangentMode: 21
+      - time: 0.25
+        value: 0.24075478
+        inSlope: -0.669478
+        outSlope: -1.004217
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.r
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.46327257
+        inSlope: 15.436695
+        outSlope: 15.436695
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.72055084
+        inSlope: 15.436695
+        outSlope: 0.012213707
+        tangentMode: 21
+      - time: 0.1
+        value: 0.72156864
+        inSlope: 0.012213707
+        outSlope: -1.7219738
+        tangentMode: 21
+      - time: 0.25
+        value: 0.46327257
+        inSlope: -1.7219738
+        outSlope: -2.5829608
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.g
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.53676474
+        inSlope: 18.529408
+        outSlope: 18.529408
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.8455882
+        inSlope: 18.529408
+        outSlope: 0.017647505
+        tangentMode: 21
+      - time: 0.1
+        value: 0.84705883
+        inSlope: 0.017647505
+        outSlope: -2.0686274
+        tangentMode: 21
+      - time: 0.25
+        value: 0.53676474
+        inSlope: -2.0686274
+        outSlope: -3.102941
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.b
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 7.2941175
+        outSlope: 20.46
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.341
+        inSlope: 20.46
+        outSlope: -0.5999998
+        tangentMode: 21
+      - time: 0.1
+        value: 0.291
+        inSlope: -0.5999998
+        outSlope: -1.94
+        tangentMode: 21
+      - time: 0.25
+        value: 0
+        inSlope: -1.94
+        outSlope: -1.2156863
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.a
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.92
+        inSlope: 0
+        outSlope: -43.8
+        tangentMode: 21
+      - time: 0.016666668
+        value: 2.19
+        inSlope: -43.8
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._Intensity
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.31
+        inSlope: 0
+        outSlope: 20.400002
+        tangentMode: 21
+      - time: 0.016666668
+        value: 1.65
+        inSlope: 20.400002
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._Intensity
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.23333333
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0.5514706
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.r
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.23333333
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0.5514706
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.g
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.23333333
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0.5514706
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.b
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 11.529411
+        outSlope: 11.529411
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.19215687
+        inSlope: 11.529411
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.23333333
+        value: 0.19215687
+        inSlope: 0
+        outSlope: -11.529412
+        tangentMode: 21
+      - time: 0.25
+        value: 0
+        inSlope: -11.529412
+        outSlope: -11.529412
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.a
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.25
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.x
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.25
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.y
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0.89
+        inSlope: 6.96
+        outSlope: 6.96
+        tangentMode: 10
+      - time: 0.25
+        value: 0.85
+        inSlope: 6.96
+        outSlope: 6.96
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.z
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.25
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.w
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 727524894
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 914802057
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 1090582214
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 1359017670
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 1627453126
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 1895888582
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 2262801196
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 2262801196
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 1895888582
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 646366601
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 109495689
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 377931145
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 727524894
+      attribute: 646366601
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 1090582214
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 1359017670
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 1627453126
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 109495689
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 377931145
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 561790300
+      attribute: 914802057
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.25
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.66
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 2.66
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.x
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.2
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0.2
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.y
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.z
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -17.8
+        inSlope: -2
+        outSlope: -2
+        tangentMode: 21
+      - time: 0.25
+        value: -18.3
+        inSlope: -2
+        outSlope: -2
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.w
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.24075478
+        inSlope: 6.072664
+        outSlope: 6.072664
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.34196585
+        inSlope: 6.072664
+        outSlope: -0.009472489
+        tangentMode: 21
+      - time: 0.1
+        value: 0.34117648
+        inSlope: -0.009472489
+        outSlope: -0.669478
+        tangentMode: 21
+      - time: 0.25
+        value: 0.24075478
+        inSlope: -0.669478
+        outSlope: -1.004217
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.r
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.46327257
+        inSlope: 15.436695
+        outSlope: 15.436695
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.72055084
+        inSlope: 15.436695
+        outSlope: 0.012213707
+        tangentMode: 21
+      - time: 0.1
+        value: 0.72156864
+        inSlope: 0.012213707
+        outSlope: -1.7219738
+        tangentMode: 21
+      - time: 0.25
+        value: 0.46327257
+        inSlope: -1.7219738
+        outSlope: -2.5829608
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.g
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.53676474
+        inSlope: 18.529408
+        outSlope: 18.529408
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.8455882
+        inSlope: 18.529408
+        outSlope: 0.017647505
+        tangentMode: 21
+      - time: 0.1
+        value: 0.84705883
+        inSlope: 0.017647505
+        outSlope: -2.0686274
+        tangentMode: 21
+      - time: 0.25
+        value: 0.53676474
+        inSlope: -2.0686274
+        outSlope: -3.102941
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.b
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 7.2941175
+        outSlope: 20.46
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.341
+        inSlope: 20.46
+        outSlope: -0.5999998
+        tangentMode: 21
+      - time: 0.1
+        value: 0.291
+        inSlope: -0.5999998
+        outSlope: -1.94
+        tangentMode: 21
+      - time: 0.25
+        value: 0
+        inSlope: -1.94
+        outSlope: -1.2156863
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.a
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.3293
+        inSlope: 1.2264006
+        outSlope: 1.2264006
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.34974
+        inSlope: 1.2264006
+        outSlope: 0.048342858
+        tangentMode: 21
+      - time: 0.25
+        value: 0.36102
+        inSlope: 0.048342858
+        outSlope: 0.048342858
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: smoke_mesh (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.9682
+        inSlope: -11.339993
+        outSlope: -11.339993
+        tangentMode: 21
+      - time: 0.016666668
+        value: 2.7792
+        inSlope: -11.339993
+        outSlope: -0.44657198
+        tangentMode: 21
+      - time: 0.25
+        value: 2.675
+        inSlope: -0.44657198
+        outSlope: -0.44657198
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: smoke_mesh (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0.13299
+        inSlope: 2.9290798
+        outSlope: 2.9290798
+        tangentMode: 21
+      - time: 0.016666668
+        value: -0.084172
+        inSlope: 2.9290798
+        outSlope: 0.115332864
+        tangentMode: 21
+      - time: 0.25
+        value: -0.057261
+        inSlope: 0.115332864
+        outSlope: 0.115332864
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: smoke_mesh (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.1285493
+        inSlope: 7.2768264
+        outSlope: 7.2768264
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.24982974
+        inSlope: 7.2768264
+        outSlope: 0.28652084
+        tangentMode: 21
+      - time: 0.25
+        value: 0.3166846
+        inSlope: 0.28652084
+        outSlope: 0.28652084
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: smoke_mesh (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.12854925
+        inSlope: 7.2768164
+        outSlope: 7.2768164
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.24982953
+        inSlope: 7.2768164
+        outSlope: 0.2865211
+        tangentMode: 21
+      - time: 0.25
+        value: 0.31668445
+        inSlope: 0.2865211
+        outSlope: 0.2865211
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: smoke_mesh (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.08996767
+        inSlope: 5.0928206
+        outSlope: 5.0928206
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.17484802
+        inSlope: 5.0928206
+        outSlope: 0.20052731
+        tangentMode: 21
+      - time: 0.25
+        value: 0.22163773
+        inSlope: 0.20052731
+        outSlope: 0.20052731
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: smoke_mesh (3)
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.92
+        inSlope: 0
+        outSlope: -43.8
+        tangentMode: 21
+      - time: 0.016666668
+        value: 2.19
+        inSlope: -43.8
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._Intensity
+    path: smoke_mesh (3)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.31
+        inSlope: 0
+        outSlope: 20.400002
+        tangentMode: 21
+      - time: 0.016666668
+        value: 1.65
+        inSlope: 20.400002
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._Intensity
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.23333333
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0.5514706
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.r
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.23333333
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0.5514706
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.g
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.23333333
+        value: 0.5514706
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.25
+        value: 0.5514706
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.b
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 11.529411
+        outSlope: 11.529411
+        tangentMode: 21
+      - time: 0.016666668
+        value: 0.19215687
+        inSlope: 11.529411
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.23333333
+        value: 0.19215687
+        inSlope: 0
+        outSlope: -11.529412
+        tangentMode: 21
+      - time: 0.25
+        value: 0
+        inSlope: -11.529412
+        outSlope: -11.529412
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.a
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.25
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.x
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.25
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.y
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0.89
+        inSlope: 6.96
+        outSlope: 6.96
+        tangentMode: 10
+      - time: 0.25
+        value: 0.85
+        inSlope: 6.96
+        outSlope: 6.96
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.z
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.25
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.w
+    path: duel_gunskill2_gun
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.36
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.016666668
+        value: 0.36
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: duel_gunskill2_gun
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.02
+        inSlope: 70.200005
+        outSlope: 70.200005
+        tangentMode: 10
+      - time: 0.016666668
+        value: 1.19
+        inSlope: 70.200005
+        outSlope: 70.200005
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: duel_gunskill2_gun
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0.04
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.016666668
+        value: -0.04
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: duel_gunskill2_gun
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.052582562
+        inSlope: -1.4360597
+        outSlope: -1.4360597
+        tangentMode: 10
+      - time: 0.016666668
+        value: 0.028648231
+        inSlope: -1.4360597
+        outSlope: -1.4360597
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: duel_gunskill2_gun
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.04449795
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.016666668
+        value: 0.04449795
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: duel_gunskill2_gun
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.04449795
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 0.016666668
+        value: 0.04449795
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: duel_gunskill2_gun
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

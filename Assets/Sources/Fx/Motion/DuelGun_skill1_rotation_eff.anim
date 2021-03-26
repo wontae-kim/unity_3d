@@ -1,0 +1,1121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: DuelGun_skill1_rotation_eff
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.96
+        inSlope: 0.91636366
+        outSlope: 33.9
+        tangentMode: 21
+      - time: 0.033333335
+        value: -0.83
+        inSlope: 33.9
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: -0.83
+        inSlope: 0
+        outSlope: -2.651852
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.x
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.34
+        inSlope: 0
+        outSlope: 7.4999986
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.59
+        inSlope: 7.4999986
+        outSlope: -0.1063291
+        tangentMode: 21
+      - time: 1.35
+        value: 0.45
+        inSlope: -0.1063291
+        outSlope: 0.0666667
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.y
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 3.72
+        inSlope: 1.1563637
+        outSlope: 2.1866655
+        tangentMode: 21
+      - time: 0.033333335
+        value: 3.7928889
+        inSlope: 2.1866655
+        outSlope: 1.6762869
+        tangentMode: 21
+      - time: 1.35
+        value: 6
+        inSlope: 1.6762869
+        outSlope: 2.0666661
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.z
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0.29
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: -0.29
+        inSlope: 0
+        outSlope: -0.2734177
+        tangentMode: 21
+      - time: 1.35
+        value: -0.65
+        inSlope: -0.2734177
+        outSlope: -0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.w
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.18
+        inSlope: 14.7
+        outSlope: -0.59999937
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1.16
+        inSlope: -0.59999937
+        outSlope: -11.099999
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._Intensity
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.8020285
+        inSlope: 0
+        outSlope: 5.9391456
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1
+        inSlope: 5.9391456
+        outSlope: -0.17214915
+        tangentMode: 21
+      - time: 1.1833333
+        value: 0.8020285
+        inSlope: -0.17214915
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.8020285
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.r
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: -8.537524
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.71541584
+        inSlope: -8.537524
+        outSlope: 0.24746451
+        tangentMode: 21
+      - time: 1.1833333
+        value: 1
+        inSlope: 0.24746451
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.g
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.1833333
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.102941155
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.b
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 21.058823
+        outSlope: 21.058823
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.7019608
+        inSlope: 21.058823
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.1833333
+        value: 0.7019608
+        inSlope: 0
+        outSlope: -4.211763
+        tangentMode: 21
+      - time: 1.35
+        value: 0
+        inSlope: -4.211763
+        outSlope: -1.8312021
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.a
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.8020285
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.8020285
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.8020285
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.5
+        value: 0.8020285
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.r
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 1
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.g
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.5
+        value: 0.102941155
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.b
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 21.058823
+        outSlope: 21.058823
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.7019608
+        inSlope: 21.058823
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.7019608
+        inSlope: 0
+        outSlope: -4.6797395
+        tangentMode: 21
+      - time: 1.5
+        value: 0
+        inSlope: -4.6797395
+        outSlope: -0.47860962
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.a
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.18
+        inSlope: 6.9
+        outSlope: 3.3000002
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1.29
+        inSlope: 3.3000002
+        outSlope: 6.9
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._Intensity
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.96
+        inSlope: 0
+        outSlope: 88.799995
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1
+        inSlope: 88.799995
+        outSlope: 0.021384276
+        tangentMode: 21
+      - time: 1.5
+        value: 1.0313636
+        inSlope: 0.021384276
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.x
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.34
+        inSlope: 0
+        outSlope: 10.2
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.68
+        inSlope: 10.2
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.5
+        value: 0.68
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.y
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 3.72
+        inSlope: -29.099998
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 3.72
+        inSlope: 0
+        outSlope: -0.6682594
+        tangentMode: 21
+      - time: 1.5
+        value: 2.7398863
+        inSlope: -0.6682594
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.z
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0.29
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: -0.29
+        inSlope: 0
+        outSlope: -0.3477273
+        tangentMode: 21
+      - time: 1.5
+        value: -0.8
+        inSlope: -0.3477273
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.w
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 1009937380
+      attribute: 109495689
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 1009937380
+      attribute: 377931145
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 1009937380
+      attribute: 646366601
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 1009937380
+      attribute: 914802057
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 1009937380
+      attribute: 2262801196
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 1009937380
+      attribute: 1090582214
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 1009937380
+      attribute: 1359017670
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 1009937380
+      attribute: 1895888582
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 3964084988
+      attribute: 1895888582
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 3964084988
+      attribute: 2262801196
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 3964084988
+      attribute: 109495689
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 3964084988
+      attribute: 377931145
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 3964084988
+      attribute: 646366601
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 3964084988
+      attribute: 914802057
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 1009937380
+      attribute: 1627453126
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 3964084988
+      attribute: 1090582214
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 3964084988
+      attribute: 1359017670
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    - path: 3964084988
+      attribute: 1627453126
+      script: {fileID: 0}
+      classID: 23
+      customType: 22
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 1.5
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.96
+        inSlope: 0.91636366
+        outSlope: 33.9
+        tangentMode: 21
+      - time: 0.033333335
+        value: -0.83
+        inSlope: 33.9
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: -0.83
+        inSlope: 0
+        outSlope: -2.651852
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.x
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.34
+        inSlope: 0
+        outSlope: 7.4999986
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.59
+        inSlope: 7.4999986
+        outSlope: -0.1063291
+        tangentMode: 21
+      - time: 1.35
+        value: 0.45
+        inSlope: -0.1063291
+        outSlope: 0.0666667
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.y
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 3.72
+        inSlope: 1.1563637
+        outSlope: 2.1866655
+        tangentMode: 21
+      - time: 0.033333335
+        value: 3.7928889
+        inSlope: 2.1866655
+        outSlope: 1.6762869
+        tangentMode: 21
+      - time: 1.35
+        value: 6
+        inSlope: 1.6762869
+        outSlope: 2.0666661
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.z
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0.29
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: -0.29
+        inSlope: 0
+        outSlope: -0.2734177
+        tangentMode: 21
+      - time: 1.35
+        value: -0.65
+        inSlope: -0.2734177
+        outSlope: -0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.w
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.18
+        inSlope: 14.7
+        outSlope: -0.59999937
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1.16
+        inSlope: -0.59999937
+        outSlope: -11.099999
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._Intensity
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.8020285
+        inSlope: 0
+        outSlope: 5.9391456
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1
+        inSlope: 5.9391456
+        outSlope: -0.17214915
+        tangentMode: 21
+      - time: 1.1833333
+        value: 0.8020285
+        inSlope: -0.17214915
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.8020285
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.r
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: -8.537524
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.71541584
+        inSlope: -8.537524
+        outSlope: 0.24746451
+        tangentMode: 21
+      - time: 1.1833333
+        value: 1
+        inSlope: 0.24746451
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.g
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.1833333
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.102941155
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.b
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 21.058823
+        outSlope: 21.058823
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.7019608
+        inSlope: 21.058823
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.1833333
+        value: 0.7019608
+        inSlope: 0
+        outSlope: -4.211763
+        tangentMode: 21
+      - time: 1.35
+        value: 0
+        inSlope: -4.211763
+        outSlope: -1.8312021
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.a
+    path: duel_gunskill1_sphere
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.8020285
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.8020285
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.8020285
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.5
+        value: 0.8020285
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.r
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 1
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.g
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.102941155
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.5
+        value: 0.102941155
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.b
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 21.058823
+        outSlope: 21.058823
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.7019608
+        inSlope: 21.058823
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.35
+        value: 0.7019608
+        inSlope: 0
+        outSlope: -4.6797395
+        tangentMode: 21
+      - time: 1.5
+        value: 0
+        inSlope: -4.6797395
+        outSlope: -0.47860962
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._TintColor.a
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.18
+        inSlope: 6.9
+        outSlope: 3.3000002
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1.29
+        inSlope: 3.3000002
+        outSlope: 6.9
+        tangentMode: 21
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._Intensity
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.96
+        inSlope: 0
+        outSlope: 88.799995
+        tangentMode: 21
+      - time: 0.033333335
+        value: 1
+        inSlope: 88.799995
+        outSlope: 0.021384276
+        tangentMode: 21
+      - time: 1.5
+        value: 1.0313636
+        inSlope: 0.021384276
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.x
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0.34
+        inSlope: 0
+        outSlope: 10.2
+        tangentMode: 21
+      - time: 0.033333335
+        value: 0.68
+        inSlope: 10.2
+        outSlope: -0
+        tangentMode: 21
+      - time: 1.5
+        value: 0.68
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.y
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 3.72
+        inSlope: -29.099998
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: 3.72
+        inSlope: 0
+        outSlope: -0.6682594
+        tangentMode: 21
+      - time: 1.5
+        value: 2.7398863
+        inSlope: -0.6682594
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.z
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -0.29
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: 0.033333335
+        value: -0.29
+        inSlope: 0
+        outSlope: -0.3477273
+        tangentMode: 21
+      - time: 1.5
+        value: -0.8
+        inSlope: -0.3477273
+        outSlope: 0
+        tangentMode: 5
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._MainTex_ST.w
+    path: duel_gunskill1_sphere (1)
+    classID: 23
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []
