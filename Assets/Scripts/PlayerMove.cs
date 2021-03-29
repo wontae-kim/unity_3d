@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Photon.Pun;
+using Photon.Realtime;
 public class PlayerMove : MonoBehaviour
 {
     //PlayerInput input;
@@ -21,6 +22,9 @@ public class PlayerMove : MonoBehaviour
     private bool isJump;
     Vector3 MoveVec;
 
+    //포톤 추가
+    public PhotonView PV;
+
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
@@ -32,23 +36,25 @@ public class PlayerMove : MonoBehaviour
     //달리는 도중에 점프나 슬라이딩 바로 안먹히는 문제가 있다.
     void Update()
     {
+        if (!PV.IsMine) return;
         GetInput();
         Move();
         Rotate();
         
-        Jump();
-        Aim();
-        Sliding();
+        //Jump();
+        //Aim();
+        //Sliding();
     }
 
     void GetInput()
     {
-    
+                
         move = Input.GetAxis("Vertical");
         rotate = Input.GetAxis("Horizontal");
         fire = Input.GetButtonDown("Fire1");
         reload = Input.GetButtonDown("Reload");
         slidingDown = Input.GetButtonDown("Sliding");
+                
     }
 
     void Move()
@@ -79,15 +85,15 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Floor")
-        {
-            isJump = false;
-            anim.SetBool("isJump", false);
-
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if(collision.gameObject.tag == "Floor")
+    //    {
+    //        isJump = false;
+    //        anim.SetBool("isJump", false);
+    //
+    //    }
+    //}
 
     void JumpEnd()
     {
