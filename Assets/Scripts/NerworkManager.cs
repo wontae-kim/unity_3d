@@ -18,6 +18,6 @@ public class NerworkManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity);
+        //PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity);
     }
 }

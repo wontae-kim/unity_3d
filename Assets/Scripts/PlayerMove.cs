@@ -6,11 +6,12 @@ using Photon.Realtime;
 public class PlayerMove : MonoBehaviour
 {
     //PlayerInput input;
-
+    public Shoot Gun;
     float move;
     float rotate;
     bool reload;
-    bool fire;
+    bool fireReady;
+    bool fireStart;
     bool slidingDown; 
 
     Rigidbody rigid;
@@ -19,17 +20,36 @@ public class PlayerMove : MonoBehaviour
     float move_speed = 5.0f;
     float rot_speed = 180f;
 
+    private bool isSlidding;
     private bool isJump;
     Vector3 MoveVec;
-
+    Vector3 DodgeVec;
     //포톤 추가
     public PhotonView PV;
+
+    void Attack()
+    {
+        if(fireReady)
+        {
+            //트리거도 구별해야 할듯 준비 하는 거랑 쏘는거 구분지어서 
+            anim.SetBool("isShotReady", true);
+            Gun.ShotReady(fireReady);
+        }
+       
+        if(fireStart)
+        {
+            Gun.ShotReady(fireReady);
+            anim.SetBool("isShotReady", false);
+            anim.SetTrigger("doShot");
+        }
+    }
 
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        //input = GetComponent<PlayerInput>();
+        //Gun = GetComponent<Shoot>();
+        Gun.gameObject.SetActive(true);
     }
 
     //FixedUpdate에서 Update로 변경했다. 
@@ -39,11 +59,12 @@ public class PlayerMove : MonoBehaviour
         if (!PV.IsMine) return;
         GetInput();
         Move();
-        Rotate();
+        //Rotate();
         
-        //Jump();
-        //Aim();
-        //Sliding();
+        Jump();
+        Aim();
+        Sliding();
+        Attack();
     }
 
     void GetInput()
@@ -51,27 +72,29 @@ public class PlayerMove : MonoBehaviour
                 
         move = Input.GetAxis("Vertical");
         rotate = Input.GetAxis("Horizontal");
-        fire = Input.GetButtonDown("Fire1");
+        fireReady = Input.GetButton("Fire1");
         reload = Input.GetButtonDown("Reload");
         slidingDown = Input.GetButtonDown("Sliding");
-                
+        fireStart = Input.GetButtonUp("Fire1");
     }
 
     void Move()
     {
         MoveVec = new Vector3(rotate, 0, move).normalized;
+        if (isSlidding)
+        {
+            MoveVec = DodgeVec;
+        }
+            
         transform.position += MoveVec * Time.deltaTime * move_speed;
 
-        //anim.SetFloat("Blend", input.move);
-       
         anim.SetBool("isMove", MoveVec != Vector3.zero);
 
     }
 
     void Rotate()
     {
-        transform.LookAt(MoveVec + transform.position);
-
+        transform.LookAt(MoveVec + transform.position);       
     }
 
     void Jump()
@@ -85,29 +108,30 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if(collision.gameObject.tag == "Floor")
-    //    {
-    //        isJump = false;
-    //        anim.SetBool("isJump", false);
-    //
-    //    }
-    //}
-
-    void JumpEnd()
+    private void OnCollisionEnter(Collision collision)
     {
-        isJump = false;
+        if(collision.gameObject.tag == "Floor")
+        {
+            isJump = false;
+            anim.SetBool("isJump", false);   
+        }
+    }
+
+    void SliddingEnd()
+    {
+        isSlidding = false;
         move_speed = 5.0f;
     }
 
     void Sliding()
     {
-        if (/*Input.GetButtonDown("Sliding")*/slidingDown && isJump == false)
+        if (slidingDown && isJump == false)
         {
             isJump = true;
             anim.SetTrigger("Sliding");
             move_speed *= 2.0f;
+            DodgeVec = MoveVec;
+            isSlidding = true;
         }
     }
 
