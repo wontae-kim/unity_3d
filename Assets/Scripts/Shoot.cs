@@ -7,20 +7,21 @@ public class Shoot : MonoBehaviour
     //오브젝트 풀링 적용전
     //public GameObject bullet;
     public Transform bulletPos;
-    public Animator anim;
-    public Transform weaponPivot;
-    public Transform rightHandMount;
-
+    
     private LineRenderer bulletLineRenderer;
     [SerializeField]
     private Transform player;
-
     //오브젝트 풀링 적용
     private BulletPooling bulletPool;
 
+    private Vector3 targetDir;
+    Vector3 pointTolook;
+
     IEnumerator Shot()
     {
-        
+        //마우스업 할때는 시선을 마우스 포인트가 가리키는 방향으로 
+        player.transform.LookAt(pointTolook);
+
         yield return null;
 
         //마우스 버튼 놓으면 발사하도록 바꾸자.
@@ -45,8 +46,7 @@ public class Shoot : MonoBehaviour
 
     void Awake()
     {
-        bulletPool = GetComponent<BulletPooling>();
-        anim = GetComponent<Animator>();
+        bulletPool = GetComponent<BulletPooling>();       
         bulletLineRenderer = GetComponent<LineRenderer>();
         // 사용할 점을 두개로 변경
         bulletLineRenderer.positionCount = 2;
@@ -68,11 +68,16 @@ public class Shoot : MonoBehaviour
 
             if (groupPlane.Raycast(ray, out rayLength))
             {
-                Vector3 pointTolook = ray.GetPoint(rayLength);                
-                player.transform.LookAt(pointTolook);
+                pointTolook = ray.GetPoint(rayLength);                
+                //player.transform.LookAt(pointTolook);
                 bulletLineRenderer.SetPosition(0, player.position);
                 //마우스 찍고 있는 방향으로 => 레이트레이싱을 해야한다. 
-                bulletLineRenderer.SetPosition(1, player.transform.forward * 10.0f
+               
+                //방향벡터를 계산하자
+                targetDir = (pointTolook - player.position).normalized;
+
+                //마우스 버튼up하면 해당 방향으로 발사 + 회전한다.
+                bulletLineRenderer.SetPosition(1, targetDir * 5.0f
                     + player.transform.position);
                 bulletLineRenderer.enabled = true;
             }
@@ -85,6 +90,7 @@ public class Shoot : MonoBehaviour
         else
         {
             bulletLineRenderer.enabled = false;
+            
             Use();
         }
     }

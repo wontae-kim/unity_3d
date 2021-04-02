@@ -5,14 +5,14 @@ using Photon.Pun;
 using Photon.Realtime;
 public class PlayerMove : MonoBehaviour
 {
-    //PlayerInput input;
+    PlayerInput input;
     public Shoot Gun;
-    float move;
-    float rotate;
-    bool reload;
-    bool fireReady;
-    bool fireStart;
-    bool slidingDown; 
+    //float move;
+    //float rotate;
+    //bool reload;
+    //bool fireReady;
+    //bool fireStart;
+    //bool slidingDown; 
 
     Rigidbody rigid;
     Animator anim;
@@ -26,22 +26,33 @@ public class PlayerMove : MonoBehaviour
     Vector3 DodgeVec;
     //포톤 추가
     public PhotonView PV;
+    public bool isLook;
 
     void Attack()
     {
-        if(fireReady)
+        if(input.fireReady)
         {
             //트리거도 구별해야 할듯 준비 하는 거랑 쏘는거 구분지어서 
             anim.SetBool("isShotReady", true);
-            Gun.ShotReady(fireReady);
+            Gun.ShotReady(input.fireReady);
         }
        
-        if(fireStart)
+        if(input.fireStart)
         {
-            Gun.ShotReady(fireReady);
+            //isLook = true;
+            StartCoroutine(ForwardDir());
+            Gun.ShotReady(input.fireReady);
             anim.SetBool("isShotReady", false);
             anim.SetTrigger("doShot");
         }
+    }
+
+    //마우스 업하면 키보드 마우스 조작으로 인한 플레이어 전방방향 설정은 무시
+    IEnumerator ForwardDir()
+    {
+        isLook = false;
+        yield return new WaitForSeconds(0.3f);
+        isLook = true;
     }
 
     void Start()
@@ -50,6 +61,7 @@ public class PlayerMove : MonoBehaviour
         anim = GetComponent<Animator>();
         //Gun = GetComponent<Shoot>();
         Gun.gameObject.SetActive(true);
+        input = GetComponent<PlayerInput>();
     }
 
     //FixedUpdate에서 Update로 변경했다. 
@@ -57,9 +69,11 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         if (!PV.IsMine) return;
-        GetInput();
+        input.GetInput();
         Move();
-        //Rotate();
+
+        //마우스 업할때는 동작되지 않도록하자. 
+        Rotate();
         
         Jump();
         Aim();
@@ -67,20 +81,20 @@ public class PlayerMove : MonoBehaviour
         Attack();
     }
 
-    void GetInput()
-    {
-                
-        move = Input.GetAxis("Vertical");
-        rotate = Input.GetAxis("Horizontal");
-        fireReady = Input.GetButton("Fire1");
-        reload = Input.GetButtonDown("Reload");
-        slidingDown = Input.GetButtonDown("Sliding");
-        fireStart = Input.GetButtonUp("Fire1");
-    }
+    //void GetInput()
+    //{
+    //            
+    //    move = Input.GetAxis("Vertical");
+    //    rotate = Input.GetAxis("Horizontal");
+    //    fireReady = Input.GetButton("Fire1");
+    //    reload = Input.GetButtonDown("Reload");
+    //    slidingDown = Input.GetButtonDown("Sliding");
+    //    fireStart = Input.GetButtonUp("Fire1");
+    //}
 
     void Move()
     {
-        MoveVec = new Vector3(rotate, 0, move).normalized;
+        MoveVec = new Vector3(input.rotate, 0, input.move).normalized;
         if (isSlidding)
         {
             MoveVec = DodgeVec;
@@ -94,7 +108,8 @@ public class PlayerMove : MonoBehaviour
 
     void Rotate()
     {
-        transform.LookAt(MoveVec + transform.position);       
+        if(isLook)
+            transform.LookAt(MoveVec + transform.position);       
     }
 
     void Jump()
@@ -125,7 +140,7 @@ public class PlayerMove : MonoBehaviour
 
     void Sliding()
     {
-        if (slidingDown && isJump == false)
+        if (input.slidingDown && isJump == false)
         {
             isJump = true;
             anim.SetTrigger("Sliding");
