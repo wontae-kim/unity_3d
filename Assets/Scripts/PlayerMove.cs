@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.UI;
+
 public class PlayerMove : MonoBehaviour
 {
     PlayerInput input;
     public Shoot Gun;
-    //float move;
-    //float rotate;
-    //bool reload;
-    //bool fireReady;
-    //bool fireStart;
-    //bool slidingDown; 
+    
 
     Rigidbody rigid;
     Animator anim;
@@ -27,6 +24,11 @@ public class PlayerMove : MonoBehaviour
     //포톤 추가
     public PhotonView PV;
     public bool isLook;
+
+
+
+    
+
 
     void Attack()
     {
@@ -62,6 +64,7 @@ public class PlayerMove : MonoBehaviour
         //Gun = GetComponent<Shoot>();
         Gun.gameObject.SetActive(true);
         input = GetComponent<PlayerInput>();
+        
     }
 
     //FixedUpdate에서 Update로 변경했다. 
@@ -81,16 +84,7 @@ public class PlayerMove : MonoBehaviour
         Attack();
     }
 
-    //void GetInput()
-    //{
-    //            
-    //    move = Input.GetAxis("Vertical");
-    //    rotate = Input.GetAxis("Horizontal");
-    //    fireReady = Input.GetButton("Fire1");
-    //    reload = Input.GetButtonDown("Reload");
-    //    slidingDown = Input.GetButtonDown("Sliding");
-    //    fireStart = Input.GetButtonUp("Fire1");
-    //}
+
 
     void Move()
     {
@@ -130,7 +124,12 @@ public class PlayerMove : MonoBehaviour
             isJump = false;
             anim.SetBool("isJump", false);   
         }
+
+        
+
     }
+
+    
 
     void SliddingEnd()
     {

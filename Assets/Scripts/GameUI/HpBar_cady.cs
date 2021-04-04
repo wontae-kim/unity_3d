@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HpBar : MonoBehaviour
+public class HpBar_cady : MonoBehaviour
 {
     [SerializeField]
     GameObject m_goPrefab = null;
     List<Transform> objectList = new List<Transform>();
     List<GameObject> hpBarList = new List<GameObject>();
 
+    //부모 RectTransform 컴포넌트
+    private RectTransform rectParent;
+    //자신 RectTransform 컴포넌트
+    private RectTransform rectHp;
     Camera cam = null;
 
     void Start()
@@ -26,7 +30,7 @@ public class HpBar : MonoBehaviour
         }
     }
 
-    void Update()
+    void LateUpdate()
     {
         for(int i = 0; i < objectList.Count; i++)
         {          

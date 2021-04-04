@@ -6,27 +6,35 @@ public class Shoot : MonoBehaviour
 {
     //오브젝트 풀링 적용전
     //public GameObject bullet;
-    public Transform bulletPos;
-    
+    //public Transform bulletPos;
+
+    //private으로 바꾸자. 0404
+    private Transform bulletPos;
+
+
     private LineRenderer bulletLineRenderer;
     [SerializeField]
     private Transform player;
+
     //오브젝트 풀링 적용
-    private BulletPooling bulletPool;
+    //private BulletPooling bulletPool;
 
     private Vector3 targetDir;
     Vector3 pointTolook;
+
+    //0404 총구 파티클 
+    ParticleSystem muzzleFlash;
 
     IEnumerator Shot()
     {
         //마우스업 할때는 시선을 마우스 포인트가 가리키는 방향으로 
         player.transform.LookAt(pointTolook);
-
+        muzzleFlash.Play();
         yield return null;
 
         //마우스 버튼 놓으면 발사하도록 바꾸자.
         //GameObject bulletIns = Instantiate(bullet, bulletPos.position, bulletPos.rotation);
-        GameObject bulletIns = bulletPool.GetQueue();
+        GameObject bulletIns = BulletManager.instance.GetQueue();       
         Rigidbody bulletRigid = bulletIns.GetComponent<Rigidbody>();
         bulletRigid.transform.position = bulletPos.position;
         bulletRigid.velocity = bulletPos.forward * 50.0f;
@@ -35,8 +43,9 @@ public class Shoot : MonoBehaviour
         yield return new WaitForSeconds(1f);
         //오브젝트 풀링 적용 전
         //Destroy(bulletIns, 1.0f);
-        
-        bulletPool.InsertQueue(bulletIns);
+
+        BulletManager.instance.InsertQueue(bulletIns);
+        //bulletPool.InsertQueue(bulletIns);
     }
 
     public void Use()
@@ -46,12 +55,27 @@ public class Shoot : MonoBehaviour
 
     void Awake()
     {
-        bulletPool = GetComponent<BulletPooling>();       
+        muzzleFlash = GetComponentInChildren<ParticleSystem>();
+
+        //bulletPool = GetComponent<BulletPooling>();       
         bulletLineRenderer = GetComponent<LineRenderer>();
         // 사용할 점을 두개로 변경
         bulletLineRenderer.positionCount = 2;
-        // 라인 렌더러를 비활성화
         bulletLineRenderer.enabled = false;
+
+        //하위 계층 중에 Transform 가지고 있는놈을 모두 찾음
+        Transform[] trans = GetComponentsInChildren<Transform>();
+
+        //0404 bulletPos를 private으로 사용하기 위해서 코드추가함.
+        foreach(Transform tran in trans)
+        {
+            if(tran.gameObject.name == "shotPos")
+            {
+                bulletPos = tran;
+                break;
+            }
+        }
+
     }
 
     //발사 구간 처리 및 시선 처리.
