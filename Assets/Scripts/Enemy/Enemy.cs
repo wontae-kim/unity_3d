@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
             StartCoroutine(OnDamage());
             hpBarPrefab.hpBarImage.fillAmount = hp / 100f;
     
-            Vector3 hitPos = other.ClosestPoint(transform.position);
+            //Vector3 hitPos = other.ClosestPoint(transform.position);
            
             //파티클 매니저는 추후에 만들고 일단은 단일작업부터 하자.
             //GameObject exp = EffectManager.instance.GetQueue();

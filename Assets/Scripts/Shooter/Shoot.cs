@@ -16,18 +16,18 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     private Transform player;
 
-    //오브젝트 풀링 적용
-    //private BulletPooling bulletPool;
 
     private Vector3 targetDir;
-    Vector3 pointTolook;
+    private Vector3 pointTolook;
 
     //0404 총구 파티클 
-    ParticleSystem muzzleFlash;
+    private ParticleSystem muzzleFlash;
 
     IEnumerator Shot()
     {
         //마우스업 할때는 시선을 마우스 포인트가 가리키는 방향으로 
+        SoundManager.instance.Play(0);
+
         player.transform.LookAt(pointTolook);
         muzzleFlash.Play();
         yield return null;
