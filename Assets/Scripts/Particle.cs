@@ -24,7 +24,7 @@ public class Particle : MonoBehaviour
 
         if (playTime >= particleSystem.main.duration)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }

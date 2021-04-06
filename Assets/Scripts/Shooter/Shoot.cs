@@ -9,35 +9,43 @@ public class Shoot : MonoBehaviour
     //public Transform bulletPos;
 
     //private으로 바꾸자. 0404
-    private Transform bulletPos;
+    private Transform shotPos;
 
 
     private LineRenderer bulletLineRenderer;
     [SerializeField]
-    private Transform player;
+    private Transform user;
 
 
     private Vector3 targetDir;
     private Vector3 pointTolook;
 
     //0404 총구 파티클 
-    private ParticleSystem muzzleFlash;
+    //private ParticleSystem muzzleFlash;
 
     IEnumerator Shot()
     {
         //마우스업 할때는 시선을 마우스 포인트가 가리키는 방향으로 
         SoundManager.instance.Play(0);
 
-        player.transform.LookAt(pointTolook);
-        muzzleFlash.Play();
+        user.transform.LookAt(pointTolook);
+        //muzzleFlash.Play();
         yield return null;
 
         //마우스 버튼 놓으면 발사하도록 바꾸자.
         //GameObject bulletIns = Instantiate(bullet, bulletPos.position, bulletPos.rotation);
-        GameObject bulletIns = BulletManager.instance.GetQueue();       
-        Rigidbody bulletRigid = bulletIns.GetComponent<Rigidbody>();
-        bulletRigid.transform.position = bulletPos.position;
-        bulletRigid.velocity = bulletPos.forward * 50.0f;
+
+        GameObject bulletIns = BulletManager.instance.GetQueue();
+        bulletIns.transform.position = shotPos.position;
+        bulletIns.transform.forward = shotPos.forward;
+
+        bulletIns.SetActive(true);
+        //트레일러 문제 때문에 일단은 주석처리함.
+        //Rigidbody bulletRigid = bulletIns.GetComponent<Rigidbody>();
+        //bulletRigid.transform.position = shotPos.position;
+        //bulletRigid.velocity = shotPos.forward * 50.0f;
+        //bulletRigid.transform.forward = shotPos.forward;
+
 
         //0402 추가함.
         yield return new WaitForSeconds(1f);
@@ -55,7 +63,7 @@ public class Shoot : MonoBehaviour
 
     void Awake()
     {
-        muzzleFlash = GetComponentInChildren<ParticleSystem>();
+        //muzzleFlash = GetComponentInChildren<ParticleSystem>();
 
         //bulletPool = GetComponent<BulletPooling>();       
         bulletLineRenderer = GetComponent<LineRenderer>();
@@ -63,15 +71,16 @@ public class Shoot : MonoBehaviour
         bulletLineRenderer.positionCount = 2;
         bulletLineRenderer.enabled = false;
 
+        GameObject parent = transform.root.gameObject;
         //하위 계층 중에 Transform 가지고 있는놈을 모두 찾음
-        Transform[] trans = GetComponentsInChildren<Transform>();
+        Transform[] trans = parent.GetComponentsInChildren<Transform>();
 
         //0404 bulletPos를 private으로 사용하기 위해서 코드추가함.
-        foreach(Transform tran in trans)
+        foreach (Transform tran in trans)
         {
             if(tran.gameObject.name == "shotPos")
             {
-                bulletPos = tran;
+                shotPos = tran;
                 break;
             }
         }
@@ -94,15 +103,15 @@ public class Shoot : MonoBehaviour
             {
                 pointTolook = ray.GetPoint(rayLength);                
                 //player.transform.LookAt(pointTolook);
-                bulletLineRenderer.SetPosition(0, player.position);
+                bulletLineRenderer.SetPosition(0, user.position);
                 //마우스 찍고 있는 방향으로 => 레이트레이싱을 해야한다. 
                
                 //방향벡터를 계산하자
-                targetDir = (pointTolook - player.position).normalized;
+                targetDir = (pointTolook - user.position).normalized;
 
                 //마우스 버튼up하면 해당 방향으로 발사 + 회전한다.
                 bulletLineRenderer.SetPosition(1, targetDir * 5.0f
-                    + player.transform.position);
+                    + user.transform.position);
                 bulletLineRenderer.enabled = true;
             }
 
